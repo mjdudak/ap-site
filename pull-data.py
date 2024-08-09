@@ -1,2 +1,5 @@
 import sys
-print(sys.argv[2])
+import json
+
+data = json.loads(sys.argv[2])
+print(data)
