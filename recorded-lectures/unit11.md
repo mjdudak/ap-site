@@ -3,4 +3,4 @@ layout: page
 title: 'Unit 11: Circuits'
 ---
 
-| Date | Topic | Recording | Notes |
+{% include_relative unit11_data.md %}

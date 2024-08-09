@@ -3,4 +3,4 @@ layout: page
 title: 'Unit 0: Summer Work Review'
 ---
 
-| Date | Topic | Recording | Notes |
+{% include_relative unit0_data.md %}

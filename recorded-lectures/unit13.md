@@ -3,4 +3,4 @@ layout: page
 title: 'Unit 13: Electromagnetism'
 ---
 
-| Date | Topic | Recording | Notes |
+{% include_relative unit13_data.md %}

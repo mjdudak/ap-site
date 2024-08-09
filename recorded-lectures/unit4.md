@@ -3,4 +3,4 @@ layout: page
 title: 'Unit 4: Energy'
 ---
 
-| Date | Topic | Recording | Notes |
+{% include_relative unit4_data.md %}

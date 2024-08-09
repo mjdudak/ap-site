@@ -3,4 +3,4 @@ layout: page
 title: 'Unit 6: Torque and Rotation'
 ---
 
-| Date | Topic | Recording | Notes |
+{% include_relative unit6_data.md %}

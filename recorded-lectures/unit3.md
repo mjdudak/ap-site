@@ -3,4 +3,4 @@ layout: page
 title: 'Unit 3: Forces'
 ---
 
-| Date | Topic | Recording | Notes |
+{% include_relative unit3_data.md %}

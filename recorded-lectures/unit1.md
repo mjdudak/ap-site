@@ -3,4 +3,4 @@ layout: page
 title: 'Unit 1: 1-D Motion'
 ---
 
-| Date | Topic | Recording | Notes |
+{% include_relative unit1_data.md %}
