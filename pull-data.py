@@ -29,10 +29,10 @@ for u in units:
                 row_string = "|"
                 for c in r:
                     row_string = row_string + c + "|"
-                    print(row_string)
                 row_string = row_string + "\n"
                 file_string = file_string + row_string
             f.write(file_string)
-            print(u + " saved")
+            print(file_string)
+        print(u + " saved")
     except KeyError:
         continue

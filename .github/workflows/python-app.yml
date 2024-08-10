@@ -21,7 +21,7 @@ jobs:
       with:
         python-version: "3.10"
     - name: Send data to Python
-      run: python pull-data.py -d '${{ toJson(github.event.client_payload) }}'
+      run: python pull-data.py -d -u '${{ toJson(github.event.client_payload) }}'
     - name: switching from https to ssh
       run: |
           git config --global user.name 'Matthew Dudak'
