@@ -1,9 +1,9 @@
 import sys
 import json
 
-print(sys.argv[2])
-data = json.loads(sys.argv[2])
 
+data = json.loads(sys.argv[-1])['data']
+print(data)
 units = [
     "unit0", 
     "unit1", 
