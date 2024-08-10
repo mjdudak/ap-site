@@ -1,5 +1,5 @@
 |Date|Topic|Recording|Notes|
-|August 15, 2024||||
+|August 15, 2024|test|||
 |August 16, 2024||||
 |August 17, 2024||||
 |August 18, 2024||||
