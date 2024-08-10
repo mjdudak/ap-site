@@ -33,5 +33,6 @@ for u in units:
                 row_string = row_string + "\n"
                 file_string = file_string + row_string
             f.write(file_string)
+            print(u + " saved")
     except KeyError:
         continue
