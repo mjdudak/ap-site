@@ -4,14 +4,12 @@
 name: Python application
 
 on:
-  push:
-    branches: [ "master" ]
   repository_dispatch:
     types:
       - new_recording
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -24,3 +22,13 @@ jobs:
         python-version: "3.10"
     - name: Send data to Python
       run: python pull-data.py -d '${{ toJson(github.event.client_payload) }}'
+    - name: switching from https to ssh
+      run: |
+          git config --global user.name 'Matthew Dudak'
+          git config --global user.email 'mjdudak@users.noreply.github.com'
+    - name: stage changed files
+      run: git add .
+    - name: commit changed files
+      run: git commit -m 'Auto updated lecture tables'
+    - name: push to master
+      run: git push
