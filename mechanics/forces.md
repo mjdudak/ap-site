@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Mechanics Free Response Problems -- Forces
+back_page: 'mechanics/index.md'
 ---
 
 | Problems                                                                                                  | Solutions                                                                                                                                            | Topic 1             | Topic 2               | Topic 3               |

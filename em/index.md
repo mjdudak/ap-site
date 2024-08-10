@@ -1,6 +1,7 @@
 ---
 layout: page
 title: E&M Free Response Problems
+back_page: 'index.html'
 ---
 
 ## [See all problems by year](e-and-m-by-year)

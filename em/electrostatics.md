@@ -1,6 +1,7 @@
 ---
 layout: page
 title: E&M Free Response Problems -- Electrostatics
+back_page: 'em/index.md'
 ---
 
 | Problems                                                                                                                                 | Solutions                                                                                                                                              | Topic 1            | Topic 2             | Topic 3            |

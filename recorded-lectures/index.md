@@ -2,6 +2,7 @@
 layout: page
 title: Recorded Lectures
 sidebar_link: true
+back_page: 'index.html'
 ---
 
 ## Mechanics

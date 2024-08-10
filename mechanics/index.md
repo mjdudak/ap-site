@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Mechanics Free Response Problems
+back_page: 'index.html'
 ---
 
 ## [See all problems by year](mechanics-by-year)
