@@ -28,9 +28,7 @@ jobs:
           git config --global user.email 'mjdudak@users.noreply.github.com'
     - name: stage changed files
       run: git add .
-    - name: diff
-      run: git diff
-    - name: commit changed files
-      run: git commit -m 'Auto updated lecture tables'
+    - name: commit changed files or do nothing
+      run: git diff --quiet || git commit -m 'Auto updated lecture tables'
     - name: push to master
       run: git push
