@@ -29,6 +29,6 @@ jobs:
     - name: stage changed files
       run: git add .
     - name: commit changed files or do nothing
-      run: git diff --quiet || git commit -m 'Auto updated lecture tables'
+      run: git commit -m 'Auto updated lecture tables'
     - name: push to master
       run: git push
