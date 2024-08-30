@@ -1,5 +1,10 @@
 |Date|Topic|Recording|Notes|
-|September 1, 2024|test|||
+|August 27, 2024|Intro to Derivatives|[Intro to Derivatives](https://drive.google.com/file/d/1-0YwxtDU6z3oBntlORbZHIJV3_I1RJvi/view?usp=drive_link)||
+|August 28, 2024||||
+|August 29, 2024||||
+|August 30, 2024||||
+|August 31, 2024||||
+|September 1, 2024||||
 |September 2, 2024||||
 |September 3, 2024||||
 |September 4, 2024||||
@@ -11,8 +16,3 @@
 |September 10, 2024||||
 |September 11, 2024||||
 |September 12, 2024||||
-|September 13, 2024||||
-|September 14, 2024||||
-|September 15, 2024||||
-|September 16, 2024||||
-|September 17, 2024||||
