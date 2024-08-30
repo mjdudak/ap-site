@@ -31,4 +31,6 @@ jobs:
     - name: check if there is a diff
       run: if [[ "$(git diff --exit-code)" =~ 'diff' ]]; then echo "IS_VALID=true" >> $GITHUB_ENV; else echo "IS_VALID=false" >> $GITHUB_ENV; fi
     - if: ${{ env.IS_VALID == 'true' }}
-      run: git commit -m "Auto updated lecture tables" && git push
+      run: git commit -m "Auto updated lecture tables"
+    - name: push commits if any
+      run: git push
