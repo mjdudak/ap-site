@@ -1,18 +1,2 @@
 |Date|Topic|Recording|Notes|
-|August 15, 2024||||
-|August 16, 2024||||
-|August 17, 2024||||
-|August 18, 2024||||
-|August 19, 2024||||
-|August 20, 2024||||
-|August 21, 2024||||
-|August 22, 2024||||
-|August 23, 2024||||
-|August 24, 2024||||
-|August 25, 2024||||
-|August 26, 2024||||
-|August 27, 2024||||
-|August 28, 2024||||
-|August 29, 2024||||
-|August 30, 2024||||
-|August 31, 2024||||
+|September 9, 2024|Vector Arithmetic|[Vector Arithmetic](https://drive.google.com/file/d/1-m5eihrmPFXM3zJHsGDoQZG_JpNiR1r1/view?usp=drive_link)||
