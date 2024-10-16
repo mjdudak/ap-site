@@ -1,18 +1,18 @@
 |Date|Topic|Recording|Notes|
-|August 15, 2024||||
-|August 16, 2024||||
-|August 17, 2024||||
-|August 18, 2024||||
-|August 19, 2024||||
-|August 20, 2024||||
-|August 21, 2024||||
-|August 22, 2024||||
-|August 23, 2024||||
-|August 24, 2024||||
-|August 25, 2024||||
-|August 26, 2024||||
-|August 27, 2024||||
-|August 28, 2024||||
-|August 29, 2024||||
-|August 30, 2024||||
-|August 31, 2024||||
+|October 8, 2024|Work and Vectors|[Work and Vectors](https://drive.google.com/file/d/1-8zKNiXHvrya8l0md8a5Jjv44IoHqLog/view?usp=drive_link)||
+|October 15, 2024|Energy and Calculus - Part 1|[Energy and Calculus - Part 1](https://drive.google.com/file/d/1-R3lhHe3Kiur292NpIE3iA5nAbnlcdsT/view?usp=drive_link)||
+|October 16, 2024|Energy and Calculus - Part 2|||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
