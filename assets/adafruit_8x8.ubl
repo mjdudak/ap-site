@@ -1,0 +1,59 @@
+module adafruit_8x8
+author unknown
+version 1 0 
+description ''
+variables i2c_id buffer all_letters 
+
+  spec ' ' 'write_pixel' 'write_pixel x _ y _' 'num num' 0 0
+  spec ' ' 'clear_matrix' 'clear_matrix'
+  spec ' ' 'init_matrix' 'init_matrix led_id (don''t change)'
+  spec ' ' 'display_ascii' 'display_ascii char _' 'str' 'A'
+  spec ' ' 'show_word' 'show_word _' 'str' 'HELLO'
+
+to clear_matrix {
+  buffer = ('[data:newByteArray]' 17 0)
+  '[sensors:i2cWrite]' i2c_id buffer
+}
+
+to display_ascii char {
+  local 'shape' ('[misc:shapeforChar]' char)
+  if (shape != 0) {
+    for x 5 {
+      local 'mask' 1
+      for y 8 {
+        if (((at x shape) & mask) != 0) {write_pixel (x + 0) y}
+        mask = (mask << 1)
+      }
+    }
+  }
+}
+
+to init_matrix {
+  '[sensors:i2cSetPins]' 0 1
+  i2c_id = (hexToInt '70')
+  local 'oscillator_on' ('[data:newByteArray]' 1 33)
+  '[sensors:i2cWrite]' i2c_id oscillator_on
+  atPut 1 oscillator_on 129
+  '[sensors:i2cWrite]' i2c_id oscillator_on
+  atPut 1 oscillator_on 226
+  buffer = ('[data:newByteArray]' 17 0)
+  '[sensors:i2cWrite]' i2c_id buffer
+}
+
+to show_word word {
+  for i (size word) {
+    display_ascii (at i word)
+    waitMillis 500
+    clear_matrix
+    waitMillis 500
+  }
+}
+
+to write_pixel x y {
+  x = ((x + 7) % 8)
+  local 'mask' (1 << (x % 8))
+  local 'addr' (y * 2)
+  atPut (addr + 2) buffer ((at (addr + 2) buffer) | mask)
+  '[sensors:i2cWrite]' i2c_id buffer
+}
+
