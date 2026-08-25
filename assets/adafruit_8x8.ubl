@@ -6,7 +6,7 @@ variables i2c_id buffer all_letters
 
   spec ' ' 'write_pixel' 'write_pixel x _ y _' 'num num' 0 0
   spec ' ' 'clear_matrix' 'clear_matrix'
-  spec ' ' 'init_matrix' 'init_matrix led_id (don''t change)'
+  spec ' ' 'init_matrix' 'init matrix'
   spec ' ' 'display_ascii' 'display_ascii char _' 'str' 'A'
   spec ' ' 'show_word' 'show_word _' 'str' 'HELLO'
 
