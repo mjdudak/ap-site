@@ -3,12 +3,25 @@ author unknown
 version 1 0 
 description ''
 variables i2c_id buffer all_letters 
-
+  spec ' ' 'init_matrix' 'init matrix'
   spec ' ' 'write_pixel' 'write_pixel x _ y _' 'num num' 0 0
   spec ' ' 'clear_matrix' 'clear_matrix'
-  spec ' ' 'init_matrix' 'init matrix'
   spec ' ' 'display_ascii' 'display_ascii char _' 'str' 'A'
   spec ' ' 'show_word' 'show_word _' 'str' 'HELLO'
+
+
+to init_matrix {
+  '[sensors:i2cSetPins]' 0 1
+  i2c_id = (hexToInt '70')
+  local 'oscillator_on' ('[data:newByteArray]' 1 33)
+  '[sensors:i2cWrite]' i2c_id oscillator_on
+  atPut 1 oscillator_on 129
+  '[sensors:i2cWrite]' i2c_id oscillator_on
+  atPut 1 oscillator_on 226
+  buffer = ('[data:newByteArray]' 17 0)
+  '[sensors:i2cWrite]' i2c_id buffer
+}
+
 
 to clear_matrix {
   buffer = ('[data:newByteArray]' 17 0)
@@ -28,17 +41,6 @@ to display_ascii char {
   }
 }
 
-to init_matrix {
-  '[sensors:i2cSetPins]' 0 1
-  i2c_id = (hexToInt '70')
-  local 'oscillator_on' ('[data:newByteArray]' 1 33)
-  '[sensors:i2cWrite]' i2c_id oscillator_on
-  atPut 1 oscillator_on 129
-  '[sensors:i2cWrite]' i2c_id oscillator_on
-  atPut 1 oscillator_on 226
-  buffer = ('[data:newByteArray]' 17 0)
-  '[sensors:i2cWrite]' i2c_id buffer
-}
 
 to show_word word {
   for i (size word) {
